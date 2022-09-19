@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>BotCreator</title>
+        <meta charset="UTF-8" />
+        <meta name="keywords" content="бот,конструктор,телеграм,дискорд" />
+        <meta name="description" content="Конструктор ботов для различных платформ" />
+    </head>
+    <body>
+        <header>
+            <div align="center">
+                <table>
+                    <tr>
+                        <th><img src="assets/logo.png" height="80" alt="logo"></th>
+                        <th><br/></th>
+                        <th><h1>Bot Creator</h1></th>
+                        <th><br/></th>
+                        <th><button type="button">Личный кабинет</button></th>
+                    </tr>
+                </table>
+            </div>
+        </header>
+        <hr>
+        <main>
+            <table>
+                <tr>
+                    <th align="left">
+                        <label for="messengers">Messenger:</label>
+                        <select id="messengers">
+                            <option>Telegram</option>
+                            <option>Discord</option>
+                            <option>Vk</option>
+                        </select>
+                        <h3>Опции:</h3>
+                        <ul>
+                            <li>
+                                <label for="default_error">Сообщения об ошибках</label>
+                                <input type="checkbox" id="default_error">
+                            </li>
+                            <li>
+                                <label for="delay">Задержка после сообщения (с)</label>
+                                <input type="number" id="delay" min="0" max="60">
+                            </li>
+                            <li>
+                                <label for="prefix">Префикс команды</label>
+                                <input id="prefix" size="1" value="/">
+                            </li>
+                        </ul>
+                        <button type="button">Загрузить</button>
+                        <button type="button">Сохранить</button>
+                    </th>
+                    <th><br/></th>
+                    <th>
+                        <label for="code"></label>
+                        <textarea id="code" rows="20" cols="100">//Поле для ввода кода</textarea>
+                    </th>
+                    <th><br/></th>
+                    <th align="left">
+                        <h3>Навигация:</h3>
+                        <nav>
+                            <ul>
+                                <li><a href="#usage">Использование</a></li>
+                                <li><a href="#contacts">Контакты</a></li>
+                            </ul>
+                        </nav>
+                    </th>
+                </tr>
+            </table>
+            <section id="usage">
+                <h1>Использование</h1>
+                <article>
+                    <p>
+                        <b>BotCreator</b> - инструмент, с помощью которого можно легко создавать простых ботов для
+                        любого мессенджера: discord, telegram, и тд.<br>
+                        Выгода такого подхода заключается в том, что всегда можно изменить тип месседжера,
+                        но логику переписывать не придется.
+                    </p>
+                    <p>Код из себя представляет словарь ответов на различные сообщения пользователей:</p>
+                    <ul>
+                        <li>
+                            <code>"say-hi" -> "hi"</code>
+                            <p>
+                                В данном примере после команды <i>/say-hi</i> пользователь получает в ответ
+                                сообщение с текстом <i>hi</i>.
+                            </p>
+                        </li>
+                        <li>
+
+                            <code>"say {text}" -> "{text}"</code>
+                            <p>
+                                Этот пример схож с предыдущим, однако теперь бот отправляет сообщение с текстом
+                                из исходного сообщения.<br>
+                                То есть при написании команды <i>/say my name</i> бот отправит текст <i>my name</i>.
+                            </p>
+                        </li>
+                        <li><p>Префикс для команд можно поставить в настройках, дефолтный префикс - /</p></li>
+                        <li><p>Код можно комментировать с помощью //</p></li>
+                    </ul>
+                </article>
+            </section>
+            <hr>
+            <pre>
+     *@@@&. ./&@@%,                     .              ,#@&(.   ./&@%                                            .
+      .&@@&.   .&@@@*                  (@*            (@@@*         ,#                                          *&(
+       &@@&.   /@@@#.    ,(%%##*.   ,%@@@@@@/        %@@@/              ,%@@@(./%@(   ,(#%%/.     ,/(%&&/.   .#@@@@@@#   *#%%#(,    .%@@@(.*%@#.
+      .&@@@&&&&@#,.    (@@(   ,@@%.  *@@@*          ,@@@@*               *&@@&, /@&.(@@,  ,%@#  *&@@, *@@@/   .@@@(    (@@/   /@@#   .&@@&, ,&&,
+      .&@@%.    #@@@( *@@@/   .&@@/  *@@@*           &@@@(               *&@@(     ,@@@@@@@@@@,     /((@@@/   .@@@(   *@@@,   *@@@/  .&@@(
+      .&@@%.    (@@@%..&@@/   ,@@@,  *@@@*            #@@@,          .   *&@@(     .%@@#        ,&@@, *@@@/   .@@@(   .&@@,   /@@&,  .&@@(
+      /@@@@*  *&@@&,    ,&&* .%@/    .%@@@&/            ,%@@(.   ,(/.    *@@@%.      (@@@@&&/   /@@@@#/&@@@/   (@@@&#   /&&, ,&@/    ,@@@%.
+            </pre>
+        </main>
+        <hr>
+        <footer>
+            <div align="center" id="contacts">
+                <p><b>Контакты:</b></p>
+                <a href="https://github.com/Mihinator3000" target="_blank" rel="noopener">GitHub</a>
+                <a href="https://t.me/mihinator3000" target="_blank" rel="noopener">Telegram</a>
+            </div>
+        </footer>
+    </body>
+</html>
