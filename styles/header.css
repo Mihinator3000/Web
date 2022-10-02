@@ -31,6 +31,7 @@ header {
 
 .header-button {
     height: 35px;
+    max-width: 100%;
     color: dodgerblue;
     background-color: white;
     border-radius: 5px;
@@ -38,6 +39,7 @@ header {
     border-color: transparent;
     font-size: 20px;
     font-weight: 600;
+    white-space: nowrap;
 }
 
 .header-button:hover {
@@ -57,4 +59,10 @@ header {
     text-decoration-color: darkorange;
     transition: 0.25s ease;
     cursor: pointer;
+}
+
+@media screen and (max-width: 1000px) {
+    .header-name {
+        display: none;
+    }
 }
