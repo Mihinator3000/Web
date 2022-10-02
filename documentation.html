@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>BotCreator</title>
+        <meta charset="UTF-8" />
+        <meta name="keywords" content="бот,конструктор,телеграм,дискорд" />
+        <meta name="description" content="Конструктор ботов для различных платформ" />
+        <link rel="stylesheet" href="styles/reset.css">
+        <link rel="stylesheet" href="styles/style.css">
+        <link rel="stylesheet" href="styles/header.css">
+        <link rel="stylesheet" href="styles/documentation.css">
+        <link rel="stylesheet" href="styles/footer.css">
+    </head>
+    <body>
+    <header>
+        <img class="header-logo" src="assets/logo.png" alt="logo">
+        <h1 class="header-name">Bot Creator</h1>
+        <nav class="header-navbar">
+            <a class="header-item" href="constructor.html">Конструктор</a>
+            <button class="header-button">Личный кабинет</button>
+            <a class="header-item">En</a>
+        </nav>
+    </header>
+    <main>
+        <h1 class="title">Использование:</h1>
+        <div class="example-grid">
+            <div class="example">
+                <code>"say-hi" -> "hi"</code>
+                <p>
+                    В данном примере после команды <i>/say-hi</i> пользователь получает в ответ
+                    сообщение с текстом <i>hi</i>.
+                </p>
+                <ul class="supported-by">
+                    <li>Telegram</li>
+                    <li>Discord</li>
+                    <li>Whatsapp</li>
+                    <li>Viber</li>
+                </ul>
+            </div>
+            <div class="example">
+                <code>"say {text}" -> "{text}"</code>
+                <p>
+                    Этот пример схож с предыдущим, однако теперь бот отправляет сообщение с текстом
+                    из исходного сообщения.<br>
+                    То есть при написании команды <i>/say my name</i> бот отправит текст <i>my name</i>.
+                </p>
+                <ul class="supported-by">
+                    <li>Telegram</li>
+                    <li>Discord</li>
+                    <li>Viber</li>
+                </ul>
+            </div>
+            <div class="example">
+                <code>//"say {text}" -> "{text}"</code>
+                <p>
+                    Любой код можно комментировать с помощью //, а также /*code*/
+                </p>
+                <ul class="supported-by">
+                    <li>Telegram</li>
+                    <li>Discord</li>
+                    <li>Whatsapp</li>
+                    <li>Viber</li>
+                </ul>
+            </div>
+            <div class="example">
+                <code>"say {text}" -> mail("{text}", "e-mail")</code>
+                <p>
+                    В данном примере после команды <i>/say-hi</i> сообщение пересылается на <i>mail</i>
+                    по заданному адресу.
+                </p>
+                <ul class="supported-by">
+                    <li>Telegram</li>
+                    <li>Discord</li>
+                    <li>Whatsapp</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <h3 class="footer-copyright">© 2022 ООО «Кошкино»</h3>
+        <div class="footer-links">
+            <a class="footer-link" href="https://github.com/Mihinator3000" target="_blank" rel="noopener">GitHub</a>
+            <a class="footer-link" href="https://t.me/mihinator3000" target="_blank" rel="noopener">Telegram</a>
+        </div>
+    </footer>
+    </body>
+</html>
