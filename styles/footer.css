@@ -1,0 +1,27 @@
+footer {
+    background: lightgray;
+    height: 50px;
+    align-items: center;
+    display: flex;
+}
+
+.footer-copyright {
+    margin: 10px;
+    text-transform: uppercase;
+}
+
+.footer-links {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.footer-link {
+    margin: 0 20px;
+    color: black;
+}
+
+.footer-link:hover {
+    color: dodgerblue;
+    transition: 0.25s ease;
+}
