@@ -3,6 +3,9 @@ footer {
     height: 50px;
     align-items: center;
     display: flex;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
 .footer-copyright {
