@@ -28,3 +28,9 @@ footer {
     color: dodgerblue;
     transition: 0.25s ease;
 }
+
+@media screen and (max-width: 800px) {
+    .footer-copyright {
+        display: none;
+    }
+}
