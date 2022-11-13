@@ -29,26 +29,6 @@ header {
     gap: 30px;
 }
 
-.header-button {
-    height: 35px;
-    max-width: 100%;
-    color: dodgerblue;
-    background-color: white;
-    border-radius: 5px;
-    border-width: 2px;
-    border-color: transparent;
-    font-size: 20px;
-    font-weight: 600;
-    white-space: nowrap;
-}
-
-.header-button:hover {
-    border-color: dodgerblue;
-    transition: 0.25s ease;
-    cursor: pointer;
-    box-shadow: none;
-}
-
 .header-item {
     color: white;
     font-size: 20px;
@@ -59,6 +39,20 @@ header {
     text-decoration-color: darkorange;
     transition: 0.25s ease;
     cursor: pointer;
+}
+
+.header-item-selected {
+    font-size: 20px;
+    max-width: 100%;
+    color: dodgerblue;
+    background-color: white;
+    border-radius: 5px;
+    border-width: 2px;
+    border-color: transparent;
+    font-weight: 600;
+    white-space: nowrap;
+    padding: 8px;
+    cursor: auto;
 }
 
 @media screen and (max-width: 1000px) {

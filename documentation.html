@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <title>BotCreator</title>
-        <meta charset="UTF-8" />
-        <meta name="keywords" content="бот,конструктор,телеграм,дискорд" />
-        <meta name="description" content="Конструктор ботов для различных платформ" />
-        <link rel="stylesheet" href="styles/reset.css">
-        <link rel="stylesheet" href="styles/style.css">
-        <link rel="stylesheet" href="styles/header.css">
-        <link rel="stylesheet" href="styles/documentation.css">
-        <link rel="stylesheet" href="styles/footer.css">
-    </head>
-    <body>
+<head>
+    <title>BotCreator</title>
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="бот,конструктор,телеграм,дискорд" />
+    <meta name="description" content="Конструктор ботов для различных платформ" />
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/documentation.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <script src="./scripts/getLoadTime.js"></script>
+</head>
+<body>
     <header>
         <img class="header-logo" src="assets/logo.png" alt="logo">
         <h1 class="header-name">Bot Creator</h1>
         <nav class="header-navbar">
+            <a class="header-item" href="index.html">Описание</a>
             <a class="header-item" href="constructor.html">Конструктор</a>
-            <button class="header-button">Личный кабинет</button>
+            <a class="header-item" href="documentation.html">Документация</a>
+            <a class="header-item" href="">Личный кабинет</a>
             <a class="header-item">En</a>
         </nav>
     </header>
@@ -82,6 +85,8 @@
             <a class="footer-link" href="https://github.com/Mihinator3000" target="_blank" rel="noopener">GitHub</a>
             <a class="footer-link" href="https://t.me/mihinator3000" target="_blank" rel="noopener">Telegram</a>
         </div>
+        <div class="load-time"></div>
     </footer>
-    </body>
+    <script src="./scripts/highlightActiveWindow.js"></script>
+</body>
 </html>
