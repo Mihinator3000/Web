@@ -24,9 +24,24 @@ const createSuggestion = (suggestion) => {
         day: "numeric"
     });
 
+    const maxSymbolsInLine = 45;
+    const splitSuggestions = suggestion.split("\n");
+    for (let i = 0; i < splitSuggestions.length; i++) {
+        let j = 0;
+
+        while (true) {
+            if (j > splitSuggestions.length)
+                break
+
+            j += maxSymbolsInLine;
+
+            splitSuggestions[i] = [splitSuggestions[i].slice(0, j), splitSuggestions[i].slice(j)].join("<br>");
+        }
+    }
+
     return `<div class="suggestion">
         <p>
-            ${suggestion.split("\n").join("<br>")}
+            ${splitSuggestions.join("<br>")}
         </p>
         <br>
         <p class="suggestion-date">
