@@ -6,8 +6,3 @@ body {
     position: relative;
     min-height: 100vh;
 }
-
-.load-time {
-    position: absolute;
-    right: 20px;
-}

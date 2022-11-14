@@ -39,6 +39,11 @@ footer {
     transition: 0.25s ease;
 }
 
+.load-time {
+    position: absolute;
+    right: 20px;
+}
+
 @media screen and (max-width: 800px) {
     .footer-copyright {
         display: none;
