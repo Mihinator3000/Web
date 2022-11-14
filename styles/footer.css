@@ -1,3 +1,13 @@
+body {
+    position: relative;
+}
+
+body::after {
+    content: "";
+    display: block;
+    height: 50px;
+}
+
 footer {
     background: lightgray;
     height: 50px;
