@@ -1,0 +1,45 @@
+.suggestion-title {
+    font-size: 32px;
+    font-weight: 600;
+    text-align: center;
+    margin: 50px;
+}
+
+.suggestions-form {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.suggestions-text {
+    width: 700px;
+    height: 250px;
+    font-size: 20px;
+}
+
+.suggestion-button {
+    font-size: 20px;
+    max-width: 100%;
+    color: white;
+    background-color: dodgerblue;
+    border-radius: 5px;
+    border-width: 2px;
+    border-color: transparent;
+    font-weight: 600;
+    white-space: nowrap;
+    padding: 8px;
+}
+
+.suggestion-button:hover {
+    border-color: dodgerblue;
+    transition: 0.25s ease;
+    cursor: pointer;
+    box-shadow: none;
+}
+
+.title {
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+    margin: 100px;
+}
