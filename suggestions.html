@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/header.css">
-    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/suggestions.css">
     <link rel="stylesheet" href="styles/footer.css">
     <script src="./scripts/getLoadTime.js"></script>
 </head>
@@ -25,20 +25,17 @@
             <a class="header-item">En</a>
         </nav>
     </header>
-    <main class="content">
-        <ul>
-            <li><h1 class="description">Конструктор чат-ботов для Telegram, Discord, WhatsApp, Viber</h1></li>
-            <li><a class="join-button" href="constructor.html">Начать!</a></li>
-            <li><h2 class="platform-header">Один бот для всех платформ</h2></li>
-            <li><h3>Вы собираете бота один раз, и он работает на любой платформе, нужной вам.</h3></li>
-            <li>
-                <div class="logo-container">
-                    <img class="messenger-logo" src="assets/telegram.svg" alt="telegram">
-                    <img class="messenger-logo" src="assets/discord.svg" alt="discord">
-                    <img class="messenger-logo" src="assets/whatsapp.svg" alt="whatsapp">
-                </div>
-            </li>
-        </ul>
+    <main>
+        <button class="clear-button">Отчистить</button>
+        <h3 class="suggestion-title">Предложи свою идею!</h3>
+        <form class="suggestions-form">
+            <label>
+                <textarea class="suggestions-text" cols="40" rows="5"></textarea>
+            </label>
+            <button class="suggestion-button">Отправить</button>
+        </form>
+        <h2 class="title">Предложения других:</h2>
+        <div class="suggestions-grid"></div>
     </main>
     <footer>
         <h3 class="footer-copyright">© 2022 ООО «Кошкино»</h3>
@@ -49,5 +46,6 @@
         <div class="load-time"></div>
     </footer>
     <script src="./scripts/highlightActiveWindow.js"></script>
+    <script src="./scripts/formController.js"></script>
 </body>
 </html>

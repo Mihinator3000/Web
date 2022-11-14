@@ -1,3 +1,13 @@
+body {
+    position: relative;
+}
+
+body::after {
+    content: "";
+    display: block;
+    height: 50px;
+}
+
 footer {
     background: lightgray;
     height: 50px;
@@ -27,6 +37,11 @@ footer {
 .footer-link:hover {
     color: dodgerblue;
     transition: 0.25s ease;
+}
+
+.load-time {
+    position: absolute;
+    right: 20px;
 }
 
 @media screen and (max-width: 800px) {
