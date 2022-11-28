@@ -1,0 +1,88 @@
+.reviews-title {
+    font-size: 32px;
+    font-weight: 600;
+    text-align: center;
+    margin: 50px;
+}
+
+.preloader {
+    margin-right: auto;
+    margin-left: auto;
+    border: 16px solid lightgray;
+    border-top: 16px solid black;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    animation: spin 1.5s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.reviews-ul {
+    margin-right: auto;
+    margin-left: auto;
+    width: 30%;
+}
+
+.review {
+    font-size: 20px;
+    flex-direction: column;
+    font-weight: 600;
+    display: flex;
+    margin-top: 50px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+}
+
+.review-body {
+    margin: 10px;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: left;
+}
+
+.review-email {
+    font-size: 17px;
+    font-weight: 600;
+    text-align: right;
+}
+
+.error {
+    display: none;
+    text-align: center;
+    font-size: 32px;
+    color: red;
+}
+
+.pages-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+.previous-button {
+    position: absolute;
+    left: calc(50% - 50px);
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.page-number {
+    position: absolute;
+    font-size: 20px;
+}
+
+.next-button {
+    position: absolute;
+    right: calc(50% - 50px);
+    font-size: 15px;
+    font-weight: 600;
+}
