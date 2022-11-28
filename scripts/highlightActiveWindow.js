@@ -2,7 +2,8 @@ const windows = {
     index: "Описание",
     constructor: "Конструктор",
     documentation: "Документация",
-    suggestions: "Предложения"
+    suggestions: "Предложения",
+    reviews: "Отзывы"
 }
 
 const headerItems = document.querySelectorAll(".header-item");

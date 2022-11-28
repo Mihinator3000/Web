@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>BotCreator</title>
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="бот,конструктор,телеграм,дискорд" />
+    <meta name="description" content="Конструктор ботов для различных платформ" />
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/reviews.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <script src="./scripts/getLoadTime.js"></script>
+</head>
+<body>
+<header>
+    <img class="header-logo" src="assets/logo.png" alt="logo">
+    <h1 class="header-name">Bot Creator</h1>
+    <nav class="header-navbar">
+        <a class="header-item" href="index.html">Описание</a>
+        <a class="header-item" href="constructor.html">Конструктор</a>
+        <a class="header-item" href="documentation.html">Документация</a>
+        <a class="header-item" href="suggestions.html">Предложения</a>
+        <a class="header-item" href="reviews.html">Отзывы</a>
+        <a class="header-item" href="">Личный кабинет</a>
+        <a class="header-item">En</a>
+    </nav>
+</header>
+<main>
+    <h3 class="reviews-title">Отзывы пользователей</h3>
+    <div class="preloader"></div>
+    <div class="error">Ошибка получения данных</div>
+    <div class="pages-nav">
+        <button class="previous-button"><</button>
+        <div class="page-number">1</div>
+        <button class="next-button">></button>
+    </div>
+    <ul class="reviews-ul"></ul>
+</main>
+<footer>
+    <h3 class="footer-copyright">© 2022 ООО «Кошкино»</h3>
+    <div class="footer-links">
+        <a class="footer-link" href="https://github.com/Mihinator3000" target="_blank" rel="noopener">GitHub</a>
+        <a class="footer-link" href="https://t.me/mihinator3000" target="_blank" rel="noopener">Telegram</a>
+    </div>
+    <div class="load-time"></div>
+</footer>
+<script src="./scripts/highlightActiveWindow.js"></script>
+<script src="./scripts/reviewsController.js"></script>
+</body>
+</html>
