@@ -1,0 +1,131 @@
+.code-area {
+    position: absolute;
+    top: 25%;
+    right: 25%;
+    left: 25%;
+    font-size: 15px;
+    font-weight: 600;
+    resize: none;
+}
+
+.block-header {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.messenger {
+    position: absolute;
+    top: 27%;
+    right: calc(75% + 50px)
+}
+
+#messengers {
+    display: block;
+    margin-top: 10px;
+    width: 100%;
+    border-radius: 1px;
+}
+
+.settings {
+    position: absolute;
+    top: 38%;
+    right: calc(75% + 50px)
+}
+
+.options {
+    margin-bottom: 50px;
+}
+
+.option {
+    display: block;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.io-button {
+    width: 45%;
+    float: left;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.io-button:hover {
+    color: darkorange;
+    background-color: transparent;
+    transition: 0.25s ease;
+    cursor: pointer;
+    box-shadow: none;
+}
+
+#load-button {
+    float: left;
+}
+
+#save-button {
+    float: right;
+}
+
+.community {
+    position: absolute;
+    top: 27%;
+    left: calc(75% + 50px)
+}
+
+.link-button {
+    text-align: center;
+    display: block;
+    margin: 15px;
+    font-size: 15px;
+    color: black;
+    background-color: darkgray;
+    padding: 10px;
+    border-radius: 10px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+}
+
+.link-button:hover {
+    background-color: white;
+    transition: 0.25s ease;
+    cursor: pointer;
+    box-shadow: none;
+}
+
+.messenger, .options, .io-button, .community {
+    background-color: lightgray;
+    padding: 10px;
+    border-radius: 10px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+}
+
+@media screen and (max-width: 1400px) {
+    .community {
+        display: none;
+    }
+
+    .code-area {
+        right: 5%;
+    }
+
+    .io-button {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .code-area {
+        left: 50%;
+    }
+
+    .messenger {
+        right: calc(50% + 50px)
+    }
+
+    .settings {
+        right: calc(50% + 50px)
+    }
+}

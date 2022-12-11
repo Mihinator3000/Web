@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>BotCreator</title>
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="бот,конструктор,телеграм,дискорд" />
+    <meta name="description" content="Конструктор ботов для различных платформ" />
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/constructor.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <script src="./scripts/getLoadTime.js"></script>
+    <script src="https://unpkg.com/dropzone@5/dist/min/dropzone.min.js"></script>
+    <link rel="stylesheet"
+          href="https://unpkg.com/dropzone@5/dist/min/dropzone.min.css"
+          type="text/css"/>
+    <script src="https://unpkg.com/headroom.js@0.12.0/dist/headroom.js"></script>
+</head>
+<body>
+<header>
+    <img class="header-logo" src="assets/logo.png" alt="logo">
+    <h1 class="header-name">Bot Creator</h1>
+    <nav class="header-navbar">
+        <a class="header-item" href="index.html">Описание</a>
+        <a class="header-item" href="constructor.html">Конструктор</a>
+        <a class="header-item" href="documentation.html">Документация</a>
+        <a class="header-item" href="suggestions.html">Предложения</a>
+        <a class="header-item" href="reviews.html">Отзывы</a>
+        <a class="header-item" href="https://isu.ifmo.ru/">Личный кабинет</a>
+    </nav>
+</header>
+<main>
+    <label>
+        <textarea class="code-area" rows="20" cols="100">//Поле для ввода кода</textarea>
+    </label>
+    <div class="messenger">
+        <label for="messengers" class="block-header">Messenger</label>
+        <select id="messengers">
+            <option>Telegram</option>
+            <option>Discord</option>
+            <option>Vk</option>
+        </select>
+    </div>
+    <div class="settings">
+        <div class="options">
+            <h3 class="block-header">Опции</h3>
+            <div class="option">
+                <label for="default_error">Сообщения об ошибках</label>
+                <input type="checkbox" id="default_error">
+            </div>
+            <div class="option">
+                <label for="delay">Задержка после сообщения (с)</label>
+                <input type="number" id="delay" min="0" max="60">
+            </div>
+            <div class="option">
+                <label for="prefix">Префикс команды</label>
+                <input id="prefix" size="1" value="/">
+            </div>
+        </div>
+        <button class="io-button" id="load-button">Загрузить</button>
+        <button class="io-button" id="save-button">Сохранить</button>
+    </div>
+    <div class="community">
+        <h3 class="block-header">Комьюнити</h3>
+        <a class="link-button" href="https://www.youtube.com/watch?v=m_OgFiOn74A" target="_blank" rel="noopener">Опубликованные боты</a>
+        <a class="link-button" href="https://steamcommunity.com/groups/fplbots" target="_blank" rel="noopener">Группа в стиме</a>
+        <a class="link-button" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noopener">Дискорд сервер</a>
+    </div>
+</main>
+<footer>
+    <h3 class="footer-copyright">© 2022 ООО «Кошкино»</h3>
+    <div class="footer-links">
+        <a class="footer-link" href="https://github.com/Mihinator3000" target="_blank" rel="noopener">GitHub</a>
+        <a class="footer-link" href="https://t.me/mihinator3000" target="_blank" rel="noopener">Telegram</a>
+    </div>
+    <div class="load-time"></div>
+</footer>
+<script src="./scripts/highlightActiveWindow.js"></script>
+<script src="scripts/dropzone.js"></script>
+<script src="./scripts/headroom.js"></script>
+</body>
+</html>

@@ -31,7 +31,7 @@ const createSuggestion = (suggestion) => {
 
         while (true) {
             if (j > splitSuggestions.length)
-                break
+                break;
 
             j += maxSymbolsInLine;
 
@@ -53,18 +53,42 @@ const createSuggestion = (suggestion) => {
 
 form.addEventListener("submit", event => {
     event.preventDefault();
-    const suggestion = document.querySelector(".suggestions-text")
-    const trimmedSuggestion = suggestion.value.trim()
-    if (trimmedSuggestion === "") {
-        return
+    const suggestion = document.querySelector(".suggestions-text");
+    const trimmedSuggestion = suggestion.value.trim();
+    if (trimmedSuggestion.length < 10) {
+        const errorText = trimmedSuggestion.length === 0
+            ? "Поле пустое"
+            : "Идея слишком короткая";
+
+        // Send alert through notie
+        notie.alert({
+            // Type 3 stands for error
+            type: 3,
+            // Time in witch notification will disappear
+            time: 2,
+            text: errorText
+        })
+        return;
     }
 
-    const suggestionHtml = createSuggestion(trimmedSuggestion)
-    grid.insertAdjacentHTML("afterbegin", suggestionHtml);
-    const suggestions = getSuggestions();
-    suggestions.unshift(suggestionHtml);
-    localStorage.setItem(localStorageKey, JSON.stringify(suggestions));
-    suggestion.value = ""
+    // Send confirmation on action through notie
+    notie.confirm({
+        text: "Отправить",
+        // Text for accept and decline
+        submitText: "Да",
+        cancelText: "Отмена",
+        // Position of confirmation popup
+        position: "bottom"
+    },
+        //Callback function on accept
+        () => {
+            const suggestionHtml = createSuggestion(trimmedSuggestion);
+            grid.insertAdjacentHTML("afterbegin", suggestionHtml);
+            const suggestions = getSuggestions();
+            suggestions.unshift(suggestionHtml);
+            localStorage.setItem(localStorageKey, JSON.stringify(suggestions));
+            suggestion.value = "";
+    })
 });
 
 const getSuggestions = () => {
