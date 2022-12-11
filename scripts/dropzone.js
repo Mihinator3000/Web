@@ -22,4 +22,3 @@ const dropzoneOptions = {
 
 // Initializing dropzone on #load-button
 const dropzone = new Dropzone("#load-button", dropzoneOptions);
-dropzone.init();
