@@ -11,6 +11,10 @@
     <link rel="stylesheet" href="styles/constructor.css">
     <link rel="stylesheet" href="styles/footer.css">
     <script src="./scripts/getLoadTime.js"></script>
+    <script src="https://unpkg.com/dropzone@5/dist/min/dropzone.min.js"></script>
+    <link rel="stylesheet"
+          href="https://unpkg.com/dropzone@5/dist/min/dropzone.min.css"
+          type="text/css"/>
 </head>
 <body>
 <header>
@@ -29,7 +33,6 @@
     <label>
         <textarea class="code-area" rows="20" cols="100">//Поле для ввода кода</textarea>
     </label>
-
     <div class="messenger">
         <label for="messengers" class="block-header">Messenger</label>
         <select id="messengers">
@@ -73,5 +76,6 @@
     <div class="load-time"></div>
 </footer>
 <script src="./scripts/highlightActiveWindow.js"></script>
+<script src="./scripts/uploadCode.js"></script>
 </body>
 </html>
